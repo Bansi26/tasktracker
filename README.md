@@ -83,6 +83,7 @@ DATABASES = {
     }
 }
 
+
 ### 5. Apply Migrations
 
 python manage.py makemigrations
