@@ -54,8 +54,6 @@ tasktracker/
 ## 📦 Setup Instructions
 
 ### 1. Clone the Repository
-
-```bash
 git clone https://github.com/<your-username>/personal-task-tracker.git
 cd personal-task-tracker
 
@@ -65,13 +63,13 @@ source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
 
 
-###3. Install Dependencies
-
+### 3. Install Dependencies 
 pip install -r requirements.txt
 
 If requirements.txt is not present, install manually: pip install django psycopg2
 
-### 4. Configure PostgreSQL Database
+### 4. Configure PostgreSQL Database 
+
 In tasktracker/settings.py, update the database config:
 
 DATABASES = {
