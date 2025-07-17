@@ -1,0 +1,96 @@
+/* style.css */
+
+
+/* Global reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Card styling */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* Buttons */
+
+.btn-primary,
+.btn-success {
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    filter: brightness(110%);
+}
+
+
+/* Form */
+
+form input,
+form textarea,
+form select {
+    margin-bottom: 12px;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+
+/* Dashboard task list */
+
+.task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.task-list li {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-actions a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.task-actions a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive tweaks */
+
+@media (max-width: 576px) {
+    .card {
+        margin: 0 10px;
+    }
+    .task-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .task-actions {
+        margin-top: 10px;
+    }
+}
